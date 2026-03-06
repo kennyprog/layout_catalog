@@ -10,7 +10,7 @@
 
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: Roboto, sans-serif;
   font-weight: 400;
   color: $title-color;
   font-size: 10px;
@@ -19,12 +19,11 @@ body {
 
 .container {
   width: 944px;
-  margin: 50px auto;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   justify-items: center;
-  row-gap: 48px;
-  column-gap: 46px;
+  gap: 46px 48px;
 }
 
 .header {
@@ -32,7 +31,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0 50px;
-  background: #fff;
+  background: $white;
 
   &__logo {
     display: block;
@@ -72,7 +71,7 @@ body {
     white-space: nowrap;
     text-decoration: none;
     text-transform: uppercase;
-    color: #000;
+    color: $black-bg;
     transition: color 0.3s;
     position: relative;
 
@@ -110,4 +109,8 @@ body {
   .container {
     grid-template-columns: repeat(4, 1fr);
   }
+}
+
+.catalog {
+  padding: 50px 40px;
 }
