@@ -2,7 +2,7 @@
   width: 200px;
   box-sizing: border-box;
   background: $white;
-  border: 1px solid #eee;
+  border: 1px solid $border-color;
   transition: 300ms;
 
   &__container {
@@ -10,7 +10,7 @@
     margin: 32px auto 0;
     transition: 300ms;
     &:hover {
-      transform: scale(1.2)
+      transform: scale(1.2);
     }
   }
 
@@ -28,6 +28,9 @@
     line-height: 1.5;
     color: $title-color;
     margin-bottom: 8px;
+    &:hover {
+      color: #34568b;
+    }
   }
 
   &__code {
@@ -88,6 +91,7 @@
     &:hover {
       background: transparent;
       color: $blue-accent;
+      transform: scale(1.2);
     }
   }
 }
